@@ -13,17 +13,10 @@ def escolha():
     escolha = int(input("Digite o valor escolhido: "))
     print("----------------------------------------------")
 
-    if(escolha == 1):
-        calcular_imc()
-        retornar()
-    elif(escolha == 2):
-        calcular_salario()
-        retornar()
-    elif(escolha == 3):
-        operacoes()
-        retornar()
-    else:
-        escolha()
+    if (escolha == 1) : calcular_imc(); retornar()
+    elif (escolha == 2) : calcular_salario(); retornar()
+    elif (escolha == 3) : operacoes(); retornar()
+    else : retornar()
 
     return escolha
 
@@ -32,7 +25,5 @@ def retornar():
     print("Digite 'home' para retornar ao menu de escolha")
     retorno = str(input())
 
-    if (retorno == "home"):
-        escolha()
-    else:
-        time.sleep(1)
+    if (retorno == "home"): escolha()
+    else: time.sleep(1)

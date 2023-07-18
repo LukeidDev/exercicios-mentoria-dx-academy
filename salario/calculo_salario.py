@@ -12,31 +12,31 @@ def calcular_salario():
     print("5 - conversor de real para yuan")
 
     select = int(input("Digite o valor selecionado: "))
-    numero1 = dig_salario()
+    a = dig_salario()
     result = float
 
     if (select == 1):
-        numero2 = bonus_salario()
+        b = bonus_salario()
 
-        result = soma(numero1, numero2)
+        result = soma(a, b)
         
         print("O salário total ao final será de : %.2f" % result)
 
     elif(select == 2):
-        numero2 = desconto_salario()
+        b = desconto_salario()
 
-        result = subtracao(numero1, numero2)
+        result = subtracao(a, b)
         print("O salário total ao final será de : %.2f" % result)
 
     elif(select == 3):
-        result = real_for_dolar(numero1)
+        result = real_for_dolar(a)
         print("O salário total ao final será de : %.2f" % result)
 
     elif(select == 4):
-        result = real_for_euro(numero1)
+        result = real_for_euro(a)
         print("O salário total ao final será de : %.2f" % result)
     elif(select == 5):
-        result = real_for_yuan(numero1)
+        result = real_for_yuan(a)
         print("O salário total ao final será de : %.2f" % result)
 
     

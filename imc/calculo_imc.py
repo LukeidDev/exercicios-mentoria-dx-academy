@@ -4,10 +4,10 @@ from calculadora.operadores import multiplicacao, divisao
 def calcular_imc():
 
     print("------------------------------------------")
-    numero1 = dig_peso()
-    numero2 = dig_altura()
+    a = dig_peso()
+    b = dig_altura()
 
-    imc = divisao(numero1, multiplicacao(numero2, numero2))
+    imc = divisao(a, multiplicacao(b, b))
 
 
     if (imc < 16.0):

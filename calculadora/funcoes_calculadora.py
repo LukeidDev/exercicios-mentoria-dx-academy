@@ -14,29 +14,29 @@ def operacoes():
     select = int(input("Digite a opção: "))
 
     if(select == 5 or 6 or 7):
-        numero3 = input_numero3()
+        c = input_numero3()
         resultado = int
     else:
-        numero1 = input_numero1()
-        numero2 = input_numero2()
+        a = input_numero1()
+        b = input_numero2()
         resultado = float
 
 
 
     if(select == 1):
-        resultado = soma(numero1, numero2)
+        resultado = soma(a, b)
     elif(select == 2):
-        resultado = subtracao(numero1, numero2)
+        resultado = subtracao(a, b)
     elif(select == 3):
-        resultado = divisao(numero1, numero2)
+        resultado = divisao(a, b)
     elif (select == 4):
-        resultado = multiplicacao(numero1, numero2)
+        resultado = multiplicacao(a, b)
     elif(select == 5):
-        resultado = int_for_bin(numero3)
+        resultado = int_for_bin(c)
     elif(select == 6):
-        resultado = int_for_raiz(numero3)
+        resultado = int_for_raiz(c)
     elif(select == 7):
-        resultado = raiz_cubica(numero3)
+        resultado = raiz_cubica(c)
     else:
         print("operador incorreto, tente novamente")
 
